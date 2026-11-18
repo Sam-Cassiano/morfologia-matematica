@@ -46,6 +46,10 @@ Só tomate (saudável × pinta-preta), só com a forma das lesões: 93,9%.
 Regra única saudável × doente (% de manchas ≥ 0,41%): 86,6%.
 Granulometria: fração das manchas que sobrevive à abertura de raio 2 — pinta-preta 0,88, sarna 0,69, saudável 0,47.
 
+> Números obtidos no **Windows**. No Linux/Colab, o `cv2.fillPoly` que desenha o fecho convexo marca 1–2 pixels
+> diferentes na borda, a **solidez** muda um pouco e as acurácias ficam 76,2% (lesões), 66,2% (folha) e 94,0% (só tomate).
+> O resultado principal (86,0%), a regra única (86,6%) e toda a parte de segmentação são idênticos nos dois sistemas.
+
 ## Estrutura
 
 ```
@@ -65,7 +69,7 @@ resultados/                   gerado ao rodar: relatorio.pdf, fig1–fig8, CSVs 
 
 ## Como rodar
 
-Com Python 3.10–3.12 e Git (o `requirements.txt` fixa o scikit-learn 1.7.2, versão com que os números acima foram gerados):
+Com Python 3.10–3.12 e Git:
 
 ```bash
 git clone https://github.com/Sam-Cassiano/Sam-Cassiano-morfologia-matematica.git
