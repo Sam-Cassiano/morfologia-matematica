@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+
+# imagens do dataset: baixadas por scripts/baixar_dataset.py (não vão para o GitHub)
+data/color/
+data/segmented/
+
+# gerados pelo notebook (seção 0) ou pelos scripts
+resultados/
